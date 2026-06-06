@@ -11,14 +11,74 @@
   "icons":
   [
     {
+      "src": "AppIcons/icons/32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "AppIcons/icons/48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "AppIcons/icons/58.png",
+      "sizes": "58x58",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "AppIcons/icons/72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "AppIcons/icons/92.png",
+      "sizes": "92x92",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "AppIcons/icons/128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "AppIcons/icons/152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "AppIcons/icons/172.png",
+      "sizes": "172x172",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
       "src": "AppIcons/icons/196.png",
-      "sizes": "192x192",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "AppIcons/icons/256.png",
+      "sizes": "256x256",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
       "src": "AppIcons/icons/512.png",
       "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "AppIcons/icons/1024.png",
+      "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any maskable"
     }

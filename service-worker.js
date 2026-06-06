@@ -44,8 +44,18 @@ const assets = [
 
     `${BASE}/manifest.json`,
     
+    `${BASE}/AppIcons/icons/32.png`,
+    `${BASE}/AppIcons/icons/48.png`,
+    `${BASE}/AppIcons/icons/58.png`,
+    `${BASE}/AppIcons/icons/72.png`,
+    `${BASE}/AppIcons/icons/92.png`,
+    `${BASE}/AppIcons/icons/128.png`,
+    `${BASE}/AppIcons/icons/152.png`,
+    `${BASE}/AppIcons/icons/172.png`,
     `${BASE}/AppIcons/icons/196.png`,
+    `${BASE}/AppIcons/icons/256.png`,
     `${BASE}/AppIcons/icons/512.png`,
+    `${BASE}/AppIcons/icons/1024.png`,
     `${BASE}/AppIcons/icons/favtab.png`
 ];
 
