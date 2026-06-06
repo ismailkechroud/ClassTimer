@@ -1,0 +1,89 @@
+/* ========== Calander Page ========== */
+
+.calanderPage {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.calanderPage .addBtn {
+    width: 60px;
+    cursor: pointer;
+}
+
+.calanderPage .scheduleImage {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+
+
+.calanderPage .fullscreenViewer {
+    position: fixed;
+    inset: 0;
+
+    overflow: auto;
+
+    background: rgba(0, 0, 0, 0.9);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.calanderPage .fullscreenViewer img {
+    width: auto;
+    height: auto;
+
+    max-width: none;
+    max-height: none;
+
+    min-width: 100%;
+
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+/* Back to Timer Page */
+.Back {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.Back h1 {
+   
+    margin-top: 5px;
+    padding: 10px;
+
+    border-radius: 20px;
+    border: 2px solid #bfeeee;
+
+    color: #ffffff;
+
+    background-color: var(--scondary);
+
+    cursor: pointer;
+}

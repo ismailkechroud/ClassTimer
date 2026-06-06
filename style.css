@@ -1,0 +1,38 @@
+/* ========== Main ========== */
+:root {
+    
+    /* Variables */
+    --size: 350px;
+
+}
+
+@font-face {
+    font-family: Comic;
+    src: url(fonts/ComicSansMS.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Comic;
+}
+
+body {
+    height: 100%;
+
+
+    background-color: var(--primary);
+}
+
+
+
+.page { 
+    display: none;
+}
+.page.active {
+    display: block;
+
+}

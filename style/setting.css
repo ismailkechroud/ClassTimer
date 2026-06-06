@@ -1,0 +1,172 @@
+/* ========== Setting Page ========== */
+.settingPage {
+    width: auto;
+    height: auto;
+}
+
+
+.back-days {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.goBack {
+
+
+    margin: 20px 10px 0px 10px;
+    padding: 0 10px;    
+
+    border: 1px solid white;
+    border-radius: 20%;
+
+    background-color: var(--scondary);
+
+    cursor: pointer;
+
+    color: #ffffff;
+    font-size: 150%;
+}
+
+.settingPage .day-selector {
+    display: flex;
+    justify-content: center;
+
+    gap: 8px;
+    margin-top: 20px;
+    flex-wrap: wrap;  
+}
+
+.daySett {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    color: white;
+    border: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.daySett:hover {
+    color: #22ff00b4;
+}
+
+.daySett.active {
+    color: #22ff00;
+}
+
+.settingPage .day-selector span {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    cursor: default;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* الكرت */
+.class-card {
+    width: 100%;
+    height: 80vh;
+
+    margin-top: 20px;
+    
+
+    display: flex;
+    align-items: stretch; /* very important !!!!!*/
+    justify-content: space-evenly;
+
+
+    flex-direction: column;
+
+    background-color: rgba(255, 0, 0, 0);
+
+}
+
+/* الجزء اليسار */
+.class-info {
+    width: 100%;
+    height: 20%;
+        
+    border-bottom: 5px solid #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    
+    flex-wrap: nowrap;
+
+    background-color: rgba(255, 0, 255, 0);
+    
+}
+
+/*الوقت + النوع + الموديل + اسم الكلاس */
+.settStartEnd , .settTypeModule , .settClass{
+    width: 100%;
+    height: 100%;
+
+    margin: 0 10px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    overflow: auto;
+
+    background-color: var(--scondary);
+
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+/* الخط الفاصل */
+.settLine {
+    height: 100%;
+    width: 20px;
+    border-radius: 30px;
+
+    background-color: #000000;
+}
+
+/* زر الحذف */
+.settDelete {
+    width: 20%;
+    background-color: var(--primary);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    cursor: pointer;
+
+}
+
+
+.settDelete img {
+    width: 30px;
+    height: max-content;
+}
+
+.settDelete img:hover {
+    
+    border-radius: 5px;
+    background: #a9a9a99a;
+}
+
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 8vh;
+}

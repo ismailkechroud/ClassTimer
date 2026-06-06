@@ -1,0 +1,218 @@
+/* ========== Begin Page ========== */
+.beginPage {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+
+
+
+
+/* ===== Days ===== */
+.beginPage .day-selector{
+    display: flex;
+    justify-content: center;
+
+    gap: 8px;
+    margin-top: 20px;
+    flex-wrap: wrap;    
+}
+
+.day{
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    color: white;
+    border: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    font-size: 100%;
+}
+
+.day:hover{
+    color: #22ff00b4;
+}
+
+.day.active{  /* it is a selector (who have two class) class="day active" */
+    color: #22ff00;
+}
+
+.beginPage .day-selector span {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    cursor: default;
+    color: white;
+}
+
+
+
+
+
+/* ===== Start-End ===== */
+.time-range {
+    width:auto;
+    max-width: 350px;
+    height: fit-content;
+
+    margin: 30px 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 4px solid #787878;
+    border-radius: 20px;
+    padding: 8px 12px;
+    
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+
+.time-range:focus-within {
+    border-color: red ;
+}
+
+.time-range input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    
+
+    text-align: center;
+    font-size: 50px;
+    background: transparent;
+}
+
+.time-range input:hover {
+    cursor: pointer;
+    background-color: #00c8ff3a;
+}
+
+.time-range input:focus {
+    cursor: text;
+}
+
+.time-range input::placeholder {
+    font-size: 80%;
+
+    opacity: 1; /* تُستخدم لتحديد شفافية العنصر، حيث تتراوح القيمة بين `0` (شفاف تمامًا) و `1` (غير شفاف) */
+    transition: 0.2s; /* إذا تغيرت، اعمل انيمايشن ثم تغير*/
+}
+
+.time-range input:focus::placeholder {
+    opacity: 0;
+}
+
+.time-range span {
+
+    color: black;
+    font-size: 50px;
+    cursor: default;
+}
+
+
+
+
+
+
+
+/* ===== Lecture-Madule-Class ===== */
+.form-group {
+    width: 90%;
+    
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group input {
+    padding: 20px;
+    border: 4px solid #787878;
+    border-radius: 50px;
+
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: red;
+    outline: none;
+}
+
+.form-group input::placeholder {
+    font-size: 70%;
+
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.form-group input:focus::placeholder {
+    opacity: 0;
+}
+
+
+
+/* ===== Back-Add-Finish ===== */
+.controls {
+    margin-top: 20px;
+
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    gap: 30px;
+}
+
+.btn {
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 25px;
+
+    flex-grow: 1;
+
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Back */
+.back {
+    background: #e12d39;
+    color: black;
+}
+
+.back:hover {
+    background-color: #b4222c;
+}
+
+/* Add */
+.add {
+    background-color: #bdbdbd;
+    color: black;
+}
+
+.add:hover {
+    background-color: #9d9d9d;
+}
+
+/* Finish */
+.finish {
+    background: #75ff00;
+    color: black;
+}
+
+.finish:hover {
+    background: #65d900;
+}

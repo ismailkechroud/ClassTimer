@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ClassTimer</title>
+
+        
+        <link rel="icon" sizes="32x32" href="AppIcons/icons/favtab.png">
+        <link rel="manifest" href="manifest.json">
+
+
+
+        <!-- CSS files -->
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="style/begin.css">
+        <link rel="stylesheet" href="style/timer.css">
+        <link rel="stylesheet" href="style/setting.css">
+        <link rel="stylesheet" href="style/university.css">
+        <link rel="stylesheet" href="style/calander.css">
+        
+        
+
+        <!-- JS files -->
+        <script type="module" src="app.js"></script>
+
+        <script type="module" src="js/pages/begin.js"></script>
+        <script type="module" src="js/pages/timer.js"></script>
+        <script type="module" src="js/pages/setting.js"></script>
+        <script type="module" src="js/pages/university.js"></script>
+        <script type="module" src="js/pages/calander.js"></script>
+
+
+    </head>
+    <body>
+
+        <section id="begin" class="page">
+        
+            <div class="beginPage">
+
+                <!-- ===== Days ===== -->
+                <div class="day-selector"> 
+                    <button class="day" data-select="Sunday">Sunday</button>
+                    <!-- data-day="Sunday" this is for used in javascript-->
+                    <span>|</span>
+                    <button class="day" data-select="Monday">Monday</button>
+                    <span>|</span>
+                    <button class="day" data-select="Tuesday">Tuesday</button>
+                    <span>|</span>
+                    <button class="day" data-select="Wednesday">Wednesday</button>
+                    <span>|</span>
+                    <button class="day" data-select="Thursday">Thursday</button>
+                    <span>|</span>
+                    <button class="day" data-select="Friday">Friday</button>
+                    <span>|</span>
+                    <button class="day" data-select="Saturday">Saturday</button>
+                </div>
+                
+                <!-- ===== Start-End ===== -->
+                <div class="time-range">
+                    <input type="text" id="start" placeholder="Start">
+                    <span>|</span>
+                    <input type="text" id="end" placeholder="End">
+                </div>
+
+                <!-- ===== Lecture-Madule-Class ===== -->
+                <div class="form-group">
+                    <input type="text" id="lectureType" placeholder="Type of lecture: cour / TD / TP">
+                    <input type="text" id="module" placeholder="Madule: Math, Physics">
+                    <input type="text" id="class" placeholder="Class: 221 / D1 / amphi M ">
+                </div>
+
+                <!-- ===== Back-Add-Finish ===== -->
+                <div class="controls">
+                    <button id="backBtn" class="btn back">Back</button>
+                    <button id="addBtn" class="btn add">Add</button>
+                    <button id="finishBtn" class="btn finish">Finish</button>
+                </div>
+            </div>
+            
+        </section>
+
+
+
+        <section id="timer" class="page">
+
+            <div class="timerPage">
+                <!-- Home-Uni-Cala-Sett -->
+                <div class="nav">
+                    <div class="left">
+                        <img src="assets/icons/Home.svg" class="home icon">
+                        <img src="assets/icons/Install.svg" style="display: none;" class="install icon">
+                        <img src="assets/icons/Link.svg" style="display: none;" class="link icon">
+                    </div>
+
+                    <div class="center">
+                        <img class="univ icon">
+                    </div>
+
+                    <div class="right">
+                        <img src="assets/icons/Calander.svg" class="calander icon">
+                        <img src="assets/icons/Settings.svg" class="setting icon">
+                    </div>
+                </div>
+                <!-- This msg for Link icon -->
+                <div id="toast" class="toast"></div>
+
+                <!-- Circle + Timer + InfoLecture -->
+                <div class="centercircle">
+                    <div class="container">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="timer">
+                                    <div id="time">
+                                        <!-- Use JS to add time --> 
+                                    </div>
+                                    <div id="otherInfo">
+                                        <!-- Use JS to add sticker --> 
+                                    </div>
+                                    <div id="infoLecture">
+                                        <!-- Use JS to add Lecture -->
+                                        <div id="lectureStartEnd"></div>
+                                        <div id="lectureTypeModule"></div>
+                                        <div id="lectureClass"></div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+
+                        
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="46.3"></circle>
+                        </svg>
+                    
+                    </div>
+                </div>
+
+                <!-- NextLecture -->
+                <div class="centerNext">
+                    <div class="next">
+                        <h2>Next:</h2>            
+                    </div>
+                    
+                    <div class="nextLecture">
+                        <!-- Use JS to add Next Lecture -->
+                        <div id="nextStartEnd"></div>
+                        <div id="nextTypeModule"></div>
+                        <div id="nextClass"></div>
+                    </div>
+                </div>
+
+                <!-- Contact me + Github-->
+                <footer class="footer">
+
+                    <a href="https://github.com/ismailkechroud/ClassTimer" target="_blank" class="footer-link">
+                        Source Code (GitHub)
+                    </a>
+
+                    <span class="divider">|</span>
+
+                    <a href="https://www.instagram.com/ismail.kechroud/" target="_blank" class="footer-link">
+                        Contact Me (Instagram)
+                    </a>
+
+                </footer>
+            </div>
+
+        </section>
+
+
+        
+        <section id="setting" class="page">
+
+            <div class="settingPage">
+                <!-- Select Day + Go back -->
+                <div class="back-days">
+
+                    <div class="goBack">
+                        ⤶
+                    </div>
+
+                    <div class="day-selector">
+                        <button class="daySett" data-select="Sunday">Sunday</button>
+                        <span>|</span>
+                        <button class="daySett" data-select="Monday">Monday</button>
+                        <span>|</span>
+                        <button class="daySett" data-select="Tuesday">Tuesday</button>
+                        <span>|</span>
+                        <button class="daySett" data-select="Wednesday">Wednesday</button>
+                        <span>|</span>
+                        <button class="daySett" data-select="Thursday">Thursday</button>
+                        <span>|</span>
+                        <button class="daySett" data-select="Friday">Friday</button>
+                        <span>|</span>
+                        <button class="daySett" data-select="Saturday">Saturday</button>
+                    </div>
+                </div>
+
+                <!-- Classes + Delete -->
+                <div class="class-card"></div>
+
+            </div>
+
+        </section>
+
+
+
+        
+        <section id="calander" class="page">
+            
+            <div class="Back">
+                <h1 id="btnBack">Timer Page</h1>
+            </div>
+            
+            
+            <div class="calanderPage">
+
+                <!-- زر الإضافة -->
+                <img id="addSchedule" src="assets/icons/addschedule.svg" alt="Add Schedule" class="addBtn">
+                <h3>Add Your Schedule</h3>
+
+                <!-- input مخفي -->
+                <input type="file" id="scheduleInput" accept="image/*" hidden>
+
+                <!-- مكان ظهور الصورة -->
+                <img id="scheduleImage" class="scheduleImage">
+
+                <!-- تكبير الصورة -->
+                <div id="fullscreenViewer" class="fullscreenViewer">
+                    <img id="fullscreenImage">
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <section id="university" class="page">
+
+            <div class="BackToTimer">
+                <h1 id="btnBackToTimer">Timer Page</h1>
+            </div>
+            
+
+            <div class="univPage">
+                
+
+                <div class="univCard USTHB">
+                    <img src="assets/logos/USTHB.jpg" alt="USTHB">
+                    <h1>USTHB</h1>
+                </div>
+
+                <div class="univCard ALGER2">
+                    <img src="assets/logos/ALGER2.jpg" alt="ALGER2">
+                    <h1>Alger 2 Bouzareah</h1>
+                </div>
+            </div>
+            
+
+        </section>
+
+    </body>
+</html>
