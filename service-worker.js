@@ -13,6 +13,7 @@ const assets = [
     `${BASE}/assets/icons/delete.svg`,
     `${BASE}/assets/icons/Install.svg`,
     `${BASE}/assets/icons/Link.svg`,
+    `${BASE}/assets/icons/addschedule.svg`,
 
     `${BASE}/assets/logos/USTHB.jpg`,
     `${BASE}/assets/logos/ALGER2.jpg`,
