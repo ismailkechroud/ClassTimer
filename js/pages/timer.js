@@ -177,7 +177,7 @@ export function initTimerPage() {
     }
 
     const text1 = "/ClassTimer/assets/stickers/finishlecture.gif";
-    const text1_1 = "/ClassTimer/assets/stickers/itssover.gif";
+    const text1_1 = "/ClassTimer/assets/stickers/itsover.gif";
     const text2 = "/ClassTimer/assets/stickers/weekend.gif";
     const text3 = "Before Starting.";
     const text4 = "/ClassTimer/assets/stickers/freetime.gif";
