@@ -176,8 +176,14 @@ export function initTimerPage() {
         document.getElementById("nextClass").textContent = "Class: " + NextLecture.className;
     }
 
-
-
+    const text1 = "/ClassTimer/assets/stickers/finishlecture.gif";
+    const text1_ = "/ClassTimer/assets/stickers/itssover.gif";
+    const text2 = "/ClassTimer/assets/stickers/weekend.gif";
+    const text3 = "Before Starting.";
+    const text4 = "/ClassTimer/assets/stickers/freetime.gif";
+    const text4_ = "/ClassTimer/assets/stickers/lunchtime.gif";
+    
+    /*  this for liveservice
     const text1 = "../../assets/stickers/finishlecture.gif";
     const text1_1 = "../../assets/stickers/itsover.gif";
 
@@ -187,6 +193,7 @@ export function initTimerPage() {
 
     const text4 = "../../assets/stickers/freetime.gif";
     const text4_1 = "../../assets/stickers/lunchtime.gif"
+    */
 
     // When I load data from LocalStorage
     let schedule;
